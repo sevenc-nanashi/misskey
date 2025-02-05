@@ -5,7 +5,7 @@
 
 import { initTestDb, sendEnvResetRequest } from './utils.js';
 
-beforeAll(async () => {
-		await initTestDb(false);
-		await sendEnvResetRequest();
-});
+export const setup = async () => {
+	await initTestDb(false);
+	await sendEnvResetRequest();
+};

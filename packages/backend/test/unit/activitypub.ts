@@ -7,7 +7,7 @@ process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
 import { Test } from '@nestjs/testing';
-import { jest } from '@jest/globals';
+import { describe, test, beforeAll, beforeEach, vi } from 'vitest';
 
 import { ApImageService } from '@/core/activitypub/models/ApImageService.js';
 import { ApNoteService } from '@/core/activitypub/models/ApNoteService.js';
@@ -143,7 +143,7 @@ describe('ActivityPub', () => {
 
 		// Prevent ApPersonService from fetching instance, as it causes Jest import-after-test error
 		const federatedInstanceService = app.get<FederatedInstanceService>(FederatedInstanceService);
-		jest.spyOn(federatedInstanceService, 'fetch').mockImplementation(() => new Promise(() => { }));
+		vi.spyOn(federatedInstanceService, 'fetch').mockImplementation(() => new Promise(() => { }));
 	});
 
 	beforeEach(() => {
@@ -440,7 +440,7 @@ describe('ActivityPub', () => {
 		});
 	});
 
-	describe('JSON-LD', () =>{
+	describe('JSON-LD', () => {
 		test('Compaction', async () => {
 			const jsonLd = jsonLdService.use();
 

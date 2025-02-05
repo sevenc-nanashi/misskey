@@ -5,6 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 import { channel, clip, cookie, galleryPost, page, play, post, signup, simpleGet, uploadFile } from '../utils.js';
 import type { SimpleGetResponse } from '../utils.js';
@@ -156,7 +157,7 @@ describe('Webリソース', () => {
 
 		describe(' has entry such ', () => {
 			beforeEach(() => {
-				post(alice, { text: "**a**" })
+				post(alice, { text: "**a**" });
 			});
 
 			test('MFMを含まない。', async () => {
@@ -169,7 +170,7 @@ describe('Webリソース', () => {
 					throw new Error("MFM shouldn't be included");
 				}
 			});
-		})
+		});
 	});
 
 	describe.each([{ path: '/api/foo' }])('$path', ({ path }) => {

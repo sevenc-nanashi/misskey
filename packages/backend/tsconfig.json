@@ -43,7 +43,8 @@
 	},
 	"compileOnSave": false,
 	"include": [
-		"./src/**/*.ts"
+		"./src/**/*.ts",
+		"./vitest.config.*.ts"
 	],
 	"exclude": [
 		"./src/**/*.test.ts"

@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 import { Test } from '@nestjs/testing';
 

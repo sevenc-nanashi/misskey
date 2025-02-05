@@ -5,6 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 import { DEFAULT_POLICIES } from '@/core/RoleService.js';
 import {
@@ -237,7 +238,7 @@ describe('アンテナ', () => {
 			status: 400,
 			code: 'EMPTY_KEYWORD',
 			id: '53ee222e-1ddd-4f9a-92e5-9fb82ddb463a'
-		})
+		});
 	});
 	//#endregion
 	//#region 更新(antennas/update)
@@ -276,7 +277,7 @@ describe('アンテナ', () => {
 			status: 400,
 			code: 'EMPTY_KEYWORD',
 			id: '721aaff6-4e1b-4d88-8de6-877fae9f68c4'
-		})
+		});
 	});
 
 	//#endregion

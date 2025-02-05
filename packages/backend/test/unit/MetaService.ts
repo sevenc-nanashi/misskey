@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { jest } from '@jest/globals';
+import { describe, expect, test, beforeAll, beforeEach, afterAll, afterEach, it, vi, Mocked } from 'vitest';
 import { Test } from '@nestjs/testing';
 import { GlobalModule } from '@/GlobalModule.js';
 import { DI } from '@/di-symbols.js';
@@ -40,7 +40,7 @@ describe('MetaService', () => {
 
 	test('fetch (cache)', async () => {
 		const db = app.get<DataSource>(DI.db);
-		const spy = jest.spyOn(db, 'transaction');
+		const spy = vi.spyOn(db, 'transaction');
 
 		const result = await metaService.fetch();
 
@@ -50,7 +50,7 @@ describe('MetaService', () => {
 
 	test('fetch (force)', async () => {
 		const db = app.get<DataSource>(DI.db);
-		const spy = jest.spyOn(db, 'transaction');
+		const spy = vi.spyOn(db, 'transaction');
 
 		const result = await metaService.fetch(true);
 

@@ -5,6 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import { Test } from '@nestjs/testing';
 import {
 	CompleteMultipartUploadCommand,

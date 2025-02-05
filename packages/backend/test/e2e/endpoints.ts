@@ -5,6 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 // node-fetch only supports it's own Blob yet
 // https://github.com/node-fetch/node-fetch/pull/1664

@@ -5,6 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 import { setTimeout } from 'node:timers/promises';
 import { api, post, signup, waitFire } from '../utils.js';

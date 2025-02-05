@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import type { Config } from '@/config.js';
 import type { ApDbResolverService } from '@/core/activitypub/ApDbResolverService.js';
 import type { ApRendererService } from '@/core/activitypub/ApRendererService.js';

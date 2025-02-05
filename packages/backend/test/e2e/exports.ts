@@ -5,6 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 import { api, port, post, signup, startJobQueue } from '../utils.js';
 import type { INestApplicationContext } from '@nestjs/common';

@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import type { Repository } from "typeorm";
 
 process.env.NODE_ENV = 'test';

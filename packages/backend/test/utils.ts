@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'node:assert';
 import { readFile } from 'node:fs/promises';
 import { basename, isAbsolute } from 'node:path';
@@ -612,8 +613,8 @@ export async function initTestDb(justBorrow = false, initEntities?: any[]) {
 		username: config.db.user,
 		password: config.db.pass,
 		database: config.db.db,
-		synchronize: true && !justBorrow,
-		dropSchema: true && !justBorrow,
+		synchronize: !justBorrow,
+		dropSchema: !justBorrow,
 		entities: initEntities ?? entities,
 	});
 

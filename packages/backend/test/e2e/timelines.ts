@@ -6,6 +6,7 @@
 // How to run:
 // pnpm jest -- e2e/timelines.ts
 
+import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
 import * as assert from 'assert';
 import { setTimeout } from 'node:timers/promises';
 import { Redis } from 'ioredis';
