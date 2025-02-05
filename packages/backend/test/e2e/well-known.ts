@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, beforeAll, } from 'vitest';
 import * as assert from 'assert';
 import { host, origin, relativeFetch, signup } from '../utils.js';
 import type * as misskey from 'misskey-js';

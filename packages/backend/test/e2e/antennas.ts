@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, beforeAll, beforeEach, } from 'vitest';
 import * as assert from 'assert';
 import { DEFAULT_POLICIES } from '@/core/RoleService.js';
 import {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, beforeAll, afterAll } from 'vitest';
 import { INestApplicationContext } from '@nestjs/common';
 
 process.env.NODE_ENV = 'test';

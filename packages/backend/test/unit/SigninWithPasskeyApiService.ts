@@ -4,7 +4,7 @@
  */
 
 import { IncomingHttpHeaders } from 'node:http';
-import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, vi, it, test } from 'vitest';
+import { afterAll, beforeAll, beforeEach, describe, expect, vi, it, } from 'vitest';
 import { Test, TestingModule } from '@nestjs/testing';
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { AuthenticationResponseJSON } from '@simplewebauthn/types';

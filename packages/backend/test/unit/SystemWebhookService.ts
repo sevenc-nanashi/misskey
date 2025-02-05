@@ -5,7 +5,7 @@
  */
 
 import { setTimeout } from 'node:timers/promises';
-import { describe, expect, test, beforeAll, beforeEach, afterAll, afterEach, it, vi, Mocked } from 'vitest';
+import { describe, expect, test, beforeAll, beforeEach, afterAll, afterEach, vi, Mocked } from 'vitest';
 import { Test, TestingModule } from '@nestjs/testing';
 import { randomString } from '../utils.js';
 import { MiUser } from '@/models/User.js';

@@ -4,7 +4,7 @@
  */
 
 import { Test, TestingModule } from '@nestjs/testing';
-import { describe, expect, test, beforeAll, beforeEach, afterAll, afterEach, it, vi, Mocked } from 'vitest';
+import { describe, expect, test, beforeAll, beforeEach, afterAll, afterEach, vi, } from 'vitest';
 import { In } from 'typeorm';
 import { UserSearchService } from '@/core/UserSearchService.js';
 import { FollowingsRepository, MiUser, UserProfilesRepository, UsersRepository } from '@/models/_.js';

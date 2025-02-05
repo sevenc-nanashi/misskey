@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, expect, test, beforeAll, } from 'vitest';
 import { validateContentTypeSetAsActivityPub, validateContentTypeSetAsJsonLD } from '@/core/activitypub/misc/validator.js';
 import { signup, uploadFile, relativeFetch } from '../utils.js';
 import type * as misskey from 'misskey-js';

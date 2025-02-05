@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, beforeAll, } from 'vitest';
 import * as assert from 'assert';
 import { ReversiMatchResponse } from 'misskey-js/entities.js';
 import { api, signup } from '../utils.js';

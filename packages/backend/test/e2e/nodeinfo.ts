@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, } from 'vitest';
 import * as assert from 'assert';
 import { relativeFetch } from '../utils.js';
 

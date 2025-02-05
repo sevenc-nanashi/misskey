@@ -5,7 +5,7 @@
 
 process.env.NODE_ENV = 'test';
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, beforeAll, beforeEach, } from 'vitest';
 import * as assert from 'assert';
 import { inspect } from 'node:util';
 import { api, post, role, signup, successfulApiCall, uploadFile } from '../utils.js';

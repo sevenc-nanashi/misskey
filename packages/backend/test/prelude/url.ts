@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import { describe, expect, test, beforeAll, beforeEach, afterAll } from 'vitest';
+import { describe, test, } from 'vitest';
 import * as assert from 'assert';
 import { query } from '../../src/misc/prelude/url.js';
 
